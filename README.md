@@ -1,0 +1,1 @@
+this extension help user focus on the current playlist which is being played in youtube without getting distracted as it just displays a alert on the screen if you get distracted or change the ongoing playlist
