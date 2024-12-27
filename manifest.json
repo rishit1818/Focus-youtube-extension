@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Playlist Focus Alert",
+    "version": "1.0",
+    "description": "Alerts you if you switch to a different YouTube playlist.",
+    "permissions": ["tabs", "notifications","activeTab","storage"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
